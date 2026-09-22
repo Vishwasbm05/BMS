@@ -17,7 +17,7 @@ public class BankApp {
 	static void CreateAccount(String cname,String email,String password,double bal) throws SQLException {
 		String iqry="insert into account(cname,email,password,balance) values ('"+cname+"','"+email+"','"+password+"','"+bal+"')";  
 		int result=stmt.executeUpdate(iqry);
-		System.out.println(result);
+		System.out.println("Result is : "+result);
 	}
 	
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
